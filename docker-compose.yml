@@ -1,0 +1,56 @@
+version: "3.8"
+services:
+    app:
+        build: .
+        container_name: cookbookshq
+        depends_on:
+            - db
+            - redis
+        environment:
+          - APP_ENV=production
+        ports:
+          - "127.0.0.1:8001:8001"
+        env_file:
+          - .env
+        volumes:
+            - /app
+        networks:
+            - cookbooks
+        restart: unless-stopped
+    db:
+        image: mysql:latest
+        container_name: db
+        restart: unless-stopped
+        environment:
+            MYSQL_ALLOW_EMPTY_PASSWORD: false
+            MYSQL_DATABASE: u417239480_ejsabet
+            MYSQL_PASSWORD:
+        volumes:
+            - cookbooks-db:/var/lib/mysql
+        networks:
+            - cookbooks
+    redis:
+        image: redis:latest
+        container_name: redis
+        restart: unless-stopped
+        volumes:
+          - cookbooks-redis:/data
+        ports:
+          - 63791:6379
+        networks:
+            - cookbooks
+        healthcheck:
+            test: [ "CMD", "redis-cli", "ping" ]
+            retries: 3
+            timeout: 5s
+    
+
+volumes:
+    cookbooks-db:
+      driver: local
+    cookbooks-redis:
+      driver: local
+
+networks:
+    cookbooks:
+        driver: bridge
