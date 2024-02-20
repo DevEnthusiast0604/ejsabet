@@ -1,0 +1,292 @@
+.page-content {
+    @media (max-width: 600px) {
+        padding: 1.5rem 1rem 0.7rem;
+    }
+}
+.page-title {
+    margin-bottom: 0;
+    i {
+        margin-right: 3px;
+    }
+}
+
+.control-label {
+    font-weight: 600;
+}
+
+.alzex-datepicker {
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.125rem;
+    font-size: 16px;
+    background: transparent;
+    color: #ced4da;
+    font-size: 14.4px;
+    &:focus {
+        border-color: #86b7fe;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+}
+[data-layout-mode=dark] .alzex-datepicker {
+    border: 1px solid #2a2f34;
+}
+
+
+// .page-filter {
+//     margin-bottom: 10px;
+//     .vue-daterange-picker {
+//         @media (max-width: 600px) {
+//             min-width: 100%;
+//         }
+//     }
+//     .reportrange-text {
+//         padding: 0.375rem 0.75rem !important;
+//     }
+//     button {
+//         white-space: nowrap;
+//     }
+// }
+
+table {
+    .btn-edit, .btn-delete {
+        font-size: 18px;
+    }
+}
+
+
+$breakpoint-mobile: 360px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+.item-image {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+@media (min-width: $breakpoint-mobile) {
+    .item-image {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .item-image {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .item-image {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}
+.viewer-toolbar > ul {
+    list-style: none;
+}
+
+.vm--container.scrollable {
+    .vm--overlay {
+        width: calc(100vw - 17px);
+    }
+}
+.vm--modal {
+    top: 80px !important;
+    height: auto !important;
+    .btn-close {
+        position: absolute;
+        right: 12px;
+    }
+    .modal-title {
+        font-size: 22px;
+    }
+}
+
+[data-layout-mode=dark] .vm--modal {
+    background-color: #212529;
+    border: solid 1px #32383e;
+}
+
+.sidebar-header {
+    .toggle-icon {
+        .bx-arrow-to-right {
+            display: none;
+        }
+        .bx-arrow-to-left {
+            display: block;
+        }
+    }
+}
+.toggled {
+    .sidebar-header {
+        .logo {
+            @media (max-width: 600px) {
+                margin-left: 48px;
+            }
+        }
+        .toggle-icon {
+            @media (max-width: 600px) {
+                margin-left: auto;
+            }
+            .bx-arrow-to-right {
+                display: block;
+                @media (max-width: 600px) {
+                    display: none;
+                }
+            }
+            .bx-arrow-to-left {
+                display: none;
+                @media (max-width: 600px) {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.form-control {
+    &::file-selector-button {
+        margin: -0.375rem 0.375rem -0.375rem -0.75rem;
+    }
+}
+
+.btn {
+    white-space: nowrap;
+}
+
+.multiselect, .multiselect__input, .multiselect__single {
+    font-size: 14.4px;
+    background: transparent;
+}
+.multiselect__single {
+    white-space: nowrap;
+    overflow: hidden;
+}
+.multiselect__tags {
+    border-color: #ced4da !important;
+    height: 37.5px;
+    min-height: 37.5px;
+    background: transparent;
+}
+.multiselect__select {
+    height: 35.5px;
+}
+.multiselect__option {
+    white-space: normal;
+}
+[data-layout-mode=dark] {
+    .multiselect__tags {
+        border-color: #2a2f34 !important;
+    }
+    .multiselect__content-wrapper {
+        background: #212529;
+        border-color: #2a2f34;
+    }
+    .multiselect, .multiselect__input, .multiselect__single {
+        color: #ced4da;
+    }
+}
+
+.top-filter {
+    @media (min-width: 600px) {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    & > * {
+        margin-right: 6px;
+        margin-bottom: 6px;
+        @media (max-width: 600px) {
+            width: 100% !important;
+        }
+    }
+    button {
+        display: flex;
+        align-items: center;
+        i {
+            margin-right: 3px;
+        }
+    }
+    .fixed-width {
+        width: 200px;
+        min-width: 200px;
+        height: 37.5px;
+        &.multiselect-container {
+            width: 250px;
+        }
+        &.fixed-width-sm {
+            width: 140px;
+            min-width: 140px;
+        }
+    }
+    .multiselect {
+        min-height: 37.5px;
+        .multiselect__select {
+            height: 37.5px;
+        }
+        .multiselect__tags {
+            min-height: 37.5px;
+        }
+    }
+    .multiselect__placeholder {
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+    .vue-daterange-picker {
+        width: 100%;
+        .daterangepicker-placeholder {
+            font-size: 13px;
+        }
+        .reportrange-text {
+            padding: 8px 10px !important;
+            background: transparent;
+            border-color: #ced4da;
+        }
+    }
+    .pagesize {
+        display: flex;
+        align-items: center;
+        label {
+            margin-bottom: 0;
+            margin-right: 6px;
+        }
+        select {
+            @media (min-width: 600px) {
+                width: 85px;
+            }
+        }
+    }
+}
+
+.vdp-datepicker__calendar {
+    color: #212529;
+}
+
+[data-layout-mode=dark] {
+    .top-filter {
+        .vue-daterange-picker {
+            .reportrange-text {
+                border-color: #2a2f34;
+            }
+        }
+    }
+}
+
+.form-switch-audit {
+    .form-check-input {
+        border-color: #dc3545;
+        &:checked {
+            background-color: #28A745;
+            border-color: #28A745;
+        }
+    }
+}
