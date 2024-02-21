@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'date' => 'Fecha',
+    'company' => 'Empresa',
+    'all_companies' => 'Todas las empresas',
+    'delete_verification_greeting' => 'Hola, por favor verifique con el código.',
+    'your_requested_data' => 'Sus datos solicitados',
+    'advanced_delete_verification' => 'Verificación de eliminación avanzada',
+    'invalid_email_address' => 'Dirección de correo electrónico no válida',
+    "incorrect_verification_code" => "Código de verificación incorrecto",
+    'something_went_wrong' => 'Algo salió mal!',
+    'delete_verification' => 'Eliminar verificación',
+    'you_are_not_admin' => 'No eres administrador!',
+    'we_are_currently_offline' => "Actualmente estamos fuera de línea",
+    'invalid_credential' => 'Su nombre de usuario o contraseña no es válido.',
+    'incoming' => 'Ingreso',
+    'expense' => 'Gastos',
+    'balance' => 'Balance',
+    'audit_report' => 'Reporte de Auditoria',
+    'category' => 'Categorías',
+    'total_amount' => 'Importe Total',
+    'type' => 'Tipo',
+    'initial_balance' => 'Balance',
+    '' => '',
+    '' => '',
+];

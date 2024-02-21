@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'date' => 'Date',
+    'company' => 'Company',
+    'all_companies' => 'All Companies',
+    'delete_verification_greeting' => 'Hello, Please verify with code.',
+    'your_requested_data' => 'Your Requested Data',
+    'advanced_delete_verification' => 'Advanced Delete Verification',
+    'invalid_email_address' => 'Invalid email address',
+    "incorrect_verification_code" => "Incorrect verification code",
+    'something_went_wrong' => 'Something went wrong',
+    'delete_verification' => 'Delete Verification',
+    'you_are_not_admin' => 'You are not admin!',
+    'we_are_currently_offline' => "We're currently offline",
+    'invalid_credential' => 'Your username or password is invalid.',
+    'incoming' => 'Incoming',
+    'expense' => 'Expense',
+    'balance' => 'Balance',
+    'audit_report' => 'Audit Report',
+    'category' => 'Category',
+    'total_amount' => 'Total Amount',
+    'type' => 'Type',
+    'initial_balance' => 'Initial Balance',
+];
