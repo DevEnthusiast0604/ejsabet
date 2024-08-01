@@ -102,3 +102,5 @@ change type of categories.status from int to string. default is active. availabl
 add field categories.must_be_approved_by_super_admin boolean
 add field transactions.is_uploading boolean default false
 add field categories.must_be_approved_from timestamp nullable
+
+Thanks for considering my project
